@@ -1,0 +1,254 @@
+:root {
+    --primario: #F6F6F6;
+	--secundario: #D6D5CC;
+	--naranja: #C4481E;
+	--negro: black;
+	--blanco: white;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primario);
+}
+footer {
+    background-color: var(--naranja);
+    padding: 2rem;
+    color: var(--blanco);
+}
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+.enlace-negro {
+    text-decoration: none;
+    color: var(--negro);
+}
+button {
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 1.1rem;
+    border: none;
+}
+button:hover {
+    background-color: var(--naranja);
+}
+img {
+    max-width: 100%;
+}
+
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+.header {
+    background-image: url(/public/backgroundHome.png);
+    height: 58rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: auto;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+        font-size: 1.2rem;
+    }
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+}
+.logo {
+    width: 19rem;
+}
+.logo-black {
+    filter: brightness(0) saturate(100%);
+    width: 22rem;
+}
+.contenedor-principal {
+    text-align: center;
+    padding: 7rem;
+    line-height: 1.2;
+}
+.contenedor-black {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 4rem;
+    line-height: 1.2;
+}
+.contenedor-gray {
+    background-color: var(--secundario);
+    line-height: 0.8;
+    padding: 4rem;
+}
+.contenedor-columns {
+    display: flex;
+    margin-top: 5rem;
+}
+.contenedor-columns img {
+    width: 95%
+}
+.contenedor-image {
+    position: relative;
+    display: inline-block;
+}
+.texto-image {
+    position: absolute;
+    top: 73%;
+    left: 10%;
+    width: 81%;
+    color: var(--blanco);
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.texto-image > div > h1 {
+    margin-bottom: .5rem;
+}
+.texto-image > div > p {
+    margin-top: .5rem;
+}
+.contenedor-columns button img {
+    max-width: none;
+    width: 8px;
+    height: 8px;
+}
+.contenedor.imagen {
+    width: 85%;
+    padding: 7rem 1rem;
+    position: relative;
+}
+.contenido-image {
+    position: absolute;
+    top: 23%;
+    left: 31.5%;
+}
+.contenido-image h1 {
+    background-color: var(--blanco);
+    font-size: 2.7rem;
+    padding-left: 2.5rem;
+    padding-right: 2.2rem;
+    margin-bottom:15.8rem;
+}
+.contenido-image button {
+    width: 35%;
+}
+.contenedor-6 {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 1;
+    margin-left: 7rem;
+    margin-right: 7rem;
+}
+.contenedor-6 > div {
+    width: 50%;
+}
+.contenedor-6 > div > button {
+    margin-top: 3rem;
+}
+.flecha-imagen {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: end;
+}
+.contenedor-apres {
+    position: absolute;
+    left: 50%;
+    line-height: 0.5;
+}
+.contenedor-iphone {
+    padding: 16rem;
+    display: flex;
+    line-height: 1;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+.contenedor-iphone > div {
+    position: relative;
+}
+.fondo-iphone {
+    position: absolute;
+    top: 1rem;
+    left: 1.1rem;
+}
+.dynamic-island {
+    position: absolute;
+    top: 2.7rem;
+    left: 5.5rem;
+}
+.contenedor-iphone div:last-child{
+    margin-left: 8%;
+}
+.contenedor-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7rem;
+    margin-top: 1rem;
+}
+.iconos-roca-lamosa {
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 2rem;
+}
+.iconos-roca-lamosa img {
+    width: 3rem;
+}
+.iconos-roca-lamosa img:last-child {
+    width: 7rem;
+}
+.contenedor-redes {
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-redes img {
+    width: 2rem;
+}
+.contenedor-footer p {
+    font-size: 1rem;
+}
+.contenedor-footer div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-principal {
+    flex-basis: calc(70% - 1rem);
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-secundario {
+    flex-basis: calc(15% - 1rem);
+}
