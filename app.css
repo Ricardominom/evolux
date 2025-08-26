@@ -1,3 +1,25 @@
+/* Tabla sin bordes para sección Trim */
+.table-noborder {
+    margin-top: 0;
+    width: 70rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border-collapse: collapse;
+    border: none;
+}
+.table-noborder thead {
+    background: black;
+    color: white;
+    border: none;
+}
+.table-noborder th,
+.table-noborder td {
+    border: none !important;
+}
+.table-noborder tr {
+    border: none !important;
+}
 /* Enlace con flecha y animación en hover */
 .link-flecha {
     position: relative;
@@ -7,6 +29,102 @@
     text-decoration: none;
     color: var(--negro);
     transition: transform 0.2s;
+}
+/* Estilos para la sección de filtros, búsqueda y tabla en checkStock.html */
+.stock-controls {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: #F6F6F6;
+    padding: 1.5rem 2rem;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid #CBCBCB;
+    margin-bottom: 0;
+}
+.stock-controls > div {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: #8E8E8E;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.stock-controls img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+.stock-controls .search-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #CBCBCB;
+    border-radius: 6px;
+    padding: 0.5rem 1.2rem;
+    margin-left: auto;
+    min-width: 260px;
+}
+.stock-controls .search-box img {
+    margin-right: 0.7rem;
+}
+.stock-controls .search-box p {
+    color: #8E8E8E;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.stock-table-container {
+    background: #F6F6F6;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 0 2rem 2rem 2rem;
+    margin-top: 0;
+}
+.stock-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #F6F6F6;
+    font-family: var(--font-elza);
+    font-size: 1.5rem;
+    color: #222;
+    box-shadow: none;
+}
+.stock-table thead {
+    background: #F6F6F6;
+}
+.stock-table th {
+    font-weight: 600;
+    color: #8E8E8E;
+    background: #F6F6F6;
+    padding: 1.2rem 0.7rem;
+    border-bottom: 1px solid #CBCBCB;
+    text-align: left;
+    font-size: 1.4rem;
+}
+.stock-table td {
+    background: #fff;
+    padding: 1.2rem 0.7rem;
+    border-bottom: 1px solid #E5E5E5;
+    font-size: 1.4rem;
+    color: #222;
+    vertical-align: middle;
+}
+.stock-table tr:last-child td {
+    border-bottom: none;
+}
+.stock-table tbody tr:nth-child(odd) td {
+    background: #F0F0F0;
+}
+.stock-table th, .stock-table td {
+    min-width: 80px;
+}
+.stock-table th:first-child, .stock-table td:first-child {
+    border-radius: 8px 0 0 8px;
+}
+.stock-table th:last-child, .stock-table td:last-child {
+    border-radius: 0 8px 8px 0;
 }
 .link-flecha:hover {
     transform: translateX(-5px);
@@ -496,7 +614,7 @@ h2 {
     font-size: 18px;
 }
 .contenedor-lotus {
-    padding-top: 0;
+    padding-top: 1rem;
     line-height: 0.5;
     font-size: 24px;
     margin-bottom: 5rem;
@@ -553,6 +671,9 @@ h2 {
 .contenedor-trim {
     background-color: var(--primario);
 }
+    .contenedor-trim.contenedor {
+        padding-left: 2rem;
+    }
 .table {
     width: 70rem;
     font-family: "Inter", sans-serif;
@@ -566,6 +687,7 @@ h2 {
 .table tr:last-child {
     border-bottom: none;
 }
+/* Fin de estilos personalizados para checkStock.html */
 .contenedor-grid {
     padding: 4rem;
     display: grid;

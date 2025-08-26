@@ -16,12 +16,12 @@
 
                     <nav class="navegacion a-negro">
                         <a>Evolux Collections</a>
-                        <a>Engineered Wood - Special Order</a>
-                        <a>Feature & benefits</a>
-                        <a>Check Stock</a>
-                        <a>Installation & Care</a>
-                        <a>Room scenes</a>
-                        <a>Collection videos</a>
+                        <a href="engineered.html">Engineered Wood - Special Order</a>
+                        <a href="builtForEveryday.html">Feature & benefits</a>
+                        <a href="checkStock.html">Check Stock</a>
+                        <a href="installation.html">Installation & Care</a>
+                        <a href="roomScenes.html">Room scenes</a>
+                        <a href="collectionVideos.html">Collection videos</a>
                     </nav>
                 </div>
             </div>
@@ -32,23 +32,25 @@
 
         </header>
         
-        <main>
-            <div>
+        <main style="padding: 6rem; padding-bottom: 20rem;">
+            <div class="stock-controls">
                 <div>
                     <img src="/public/filter.png" alt="Filter">
                     <p>Filter (0)</p>
                 </div>
-                <div>
-                    <img src="/public/sort.png" alt="Sort">
-                    <p>Sort by</p>
-                </div>
-                <div>
-                    <img src="/public/search.png" alt="search">
-                    <p>Search</p>
+                <div style="display: flex; align-items: center; gap: 2rem;">
+                    <div style="display: flex; align-items: center; gap: 0.7rem;">
+                        <img src="/public/sort.png" alt="Sort">
+                        <p>Sort by</p>
+                    </div>
+                    <div class="search-box">
+                        <img src="/public/search.png" alt="search">
+                        <p>Search</p>
+                    </div>
                 </div>
             </div>
-            <div>
-                <table>
+            <div class="stock-table-container">
+                <table class="stock-table">
                     <thead>
                         <tr>
                             <th>Warehouse</th>
@@ -68,159 +70,161 @@
                             <th>Boxes Per Pallet</th>
                         </tr>
                     </thead>
-                    <tr>
-                        <td>CHICAGO</td>
-                        <td>DISPLAY RACK K5</td>
-                        <td>0.01</td>
-                        <td>61</td>
-                        <td>0</td>
-                        <td>00</td>
-                        <td>EVOIDS-TWERK</td>
-                        <td>MERCH LVT</td>
-                        <td>UNDEFINED</td>
-                        <td>UNDEFINED</td>
-                        <td>07/25/2025 12:24 PM</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>0.0014</td>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <td>CHICAGO</td>
-                        <td>BOARD-WF DISPLAY RACK</td>
-                        <td>0</td>
-                        <td>47</td>
-                        <td>0</td>
-                        <td>00</td>
-                        <td>EVODIS-WATER</td>
-                        <td>MERCH LVT</td>
-                        <td>UNDEFINED</td>
-                        <td>UNDEFINED</td>
-                        <td>07/25/2025 12:24 PM</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>0.0036</td>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>ANAHEIM</td>
-                        <td>DISPLAY RACK K5</td>
-                        <td>0</td>
-                        <td>24</td>
-                        <td>0</td>
-                        <td>00</td>
-                        <td>EVOIDS-TWERK</td>
-                        <td>MERCH LVT</td>
-                        <td>UNDEFINED</td>
-                        <td>UNDEFINED</td>
-                        <td>07/25/2025 12:24 PM</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>0.0014</td>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <td>ANAHEIM</td>
-                        <td>TOWER DISPLAY RACK 2 PCS</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>00</td>
-                        <td>EVODIS-TWERP1</td>
-                        <td>MERCH LVT</td>
-                        <td>UNDEFINED</td>
-                        <td>UNDEFINED</td>
-                        <td>07/25/2025 12:24 PM</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>0.001</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>ANAHEIM</td>
-                        <td>BOARD-WF DISPLAY RACK</td>
-                        <td>0</td>
-                        <td>26</td>
-                        <td>0</td>
-                        <td>00</td>
-                        <td>EVODIS-WATER</td>
-                        <td>MERCH LVT</td>
-                        <td>UNDEFINED</td>
-                        <td>UNDEFINED</td>
-                        <td>07/25/2025 12:24 PM</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>0.0036</td>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>HOUSTON</td>
-                        <td>DISPLAY RACK K5</td>
-                        <td>0</td>
-                        <td>16</td>
-                        <td>0</td>
-                        <td>00</td>
-                        <td>EVOIDS-TWERK</td>
-                        <td>MERCH LVT</td>
-                        <td>UNDEFINED</td>
-                        <td>UNDEFINED</td>
-                        <td>07/25/2025 12:24 PM</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>0.0014</td>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <td>HOUSTON</td>
-                        <td>TOWER DISPLAY TACK 2 PCS</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>0</td>
-                        <td>00</td>
-                        <td>EVODIS-TWERP1</td>
-                        <td>MERCH LVT</td>
-                        <td>UNDEFINED</td>
-                        <td>UNDEFINED</td>
-                        <td>07/25/2025 12:24 PM</td>
-                        <td>0</td>
-                        <td>1</td>
-                        <td>0.001</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>HOUSTON</td>
-                        <td>BOARD-WF DISPLAY RACK</td>
-                        <td>0</td>
-                        <td>9</td>
-                        <td>0</td>
-                        <td>00</td>
-                        <td>EVODIS-WATER</td>
-                        <td>MERCH LVT</td>
-                        <td>UNDEFINED</td>
-                        <td>UNDEFINED</td>
-                        <td>07/25/2025 12:24 PM</td>
-                        <td>0</td>
-                        <td>2</td>
-                        <td>0.0036</td>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>HOUSTON</td>
-                        <td>EVOLVE LIGHT GRAY 24X24 R</td>
-                        <td>31.16</td>
-                        <td>8</td>
-                        <td>C</td>
-                        <td>50</td>
-                        <td>FTEVOGR2424T</td>
-                        <td>PAVERS</td>
-                        <td>LIGHT GREY</td>
-                        <td>24X24 FIELD</td>
-                        <td>07/25/2025 12:24 PM</td>
-                        <td>7.79</td>
-                        <td>2</td>
-                        <td>280.44</td>
-                        <td>36</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>CHICAGO</td>
+                            <td>DISPLAY RACK K5</td>
+                            <td>0.01</td>
+                            <td>61</td>
+                            <td>0</td>
+                            <td>00</td>
+                            <td>EVOIDS-TWERK</td>
+                            <td>MERCH LVT</td>
+                            <td>UNDEFINED</td>
+                            <td>UNDEFINED</td>
+                            <td>07/25/2025 12:24 PM</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0.0014</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>CHICAGO</td>
+                            <td>BOARD-WF DISPLAY RACK</td>
+                            <td>0</td>
+                            <td>47</td>
+                            <td>0</td>
+                            <td>00</td>
+                            <td>EVODIS-WATER</td>
+                            <td>MERCH LVT</td>
+                            <td>UNDEFINED</td>
+                            <td>UNDEFINED</td>
+                            <td>07/25/2025 12:24 PM</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>0.0036</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>ANAHEIM</td>
+                            <td>DISPLAY RACK K5</td>
+                            <td>0</td>
+                            <td>24</td>
+                            <td>0</td>
+                            <td>00</td>
+                            <td>EVOIDS-TWERK</td>
+                            <td>MERCH LVT</td>
+                            <td>UNDEFINED</td>
+                            <td>UNDEFINED</td>
+                            <td>07/25/2025 12:24 PM</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0.0014</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>ANAHEIM</td>
+                            <td>TOWER DISPLAY RACK 2 PCS</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>00</td>
+                            <td>EVODIS-TWERP1</td>
+                            <td>MERCH LVT</td>
+                            <td>UNDEFINED</td>
+                            <td>UNDEFINED</td>
+                            <td>07/25/2025 12:24 PM</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0.001</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>ANAHEIM</td>
+                            <td>BOARD-WF DISPLAY RACK</td>
+                            <td>0</td>
+                            <td>26</td>
+                            <td>0</td>
+                            <td>00</td>
+                            <td>EVODIS-WATER</td>
+                            <td>MERCH LVT</td>
+                            <td>UNDEFINED</td>
+                            <td>UNDEFINED</td>
+                            <td>07/25/2025 12:24 PM</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>0.0036</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>HOUSTON</td>
+                            <td>DISPLAY RACK K5</td>
+                            <td>0</td>
+                            <td>16</td>
+                            <td>0</td>
+                            <td>00</td>
+                            <td>EVOIDS-TWERK</td>
+                            <td>MERCH LVT</td>
+                            <td>UNDEFINED</td>
+                            <td>UNDEFINED</td>
+                            <td>07/25/2025 12:24 PM</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0.0014</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>HOUSTON</td>
+                            <td>TOWER DISPLAY TACK 2 PCS</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>00</td>
+                            <td>EVODIS-TWERP1</td>
+                            <td>MERCH LVT</td>
+                            <td>UNDEFINED</td>
+                            <td>UNDEFINED</td>
+                            <td>07/25/2025 12:24 PM</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0.001</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>HOUSTON</td>
+                            <td>BOARD-WF DISPLAY RACK</td>
+                            <td>0</td>
+                            <td>9</td>
+                            <td>0</td>
+                            <td>00</td>
+                            <td>EVODIS-WATER</td>
+                            <td>MERCH LVT</td>
+                            <td>UNDEFINED</td>
+                            <td>UNDEFINED</td>
+                            <td>07/25/2025 12:24 PM</td>
+                            <td>0</td>
+                            <td>2</td>
+                            <td>0.0036</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>HOUSTON</td>
+                            <td>EVOLVE LIGHT GRAY 24X24 R</td>
+                            <td>31.16</td>
+                            <td>8</td>
+                            <td>C</td>
+                            <td>50</td>
+                            <td>FTEVOGR2424T</td>
+                            <td>PAVERS</td>
+                            <td>LIGHT GREY</td>
+                            <td>24X24 FIELD</td>
+                            <td>07/25/2025 12:24 PM</td>
+                            <td>7.79</td>
+                            <td>2</td>
+                            <td>280.44</td>
+                            <td>36</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </main>
@@ -240,9 +244,9 @@
             </div>
             
             <div class="footer-principal">
-                <a href="">Terms and conditions</a>
+                <a href="termsandconditions.html">Terms and conditions</a>
                 <a href="">Warranty</a>
-                <a href="">About us</a>
+                <a href="aboutUs.html">About us</a>
                 <a href="">Contact us</a>
             </div>
             
