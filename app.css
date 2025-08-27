@@ -280,6 +280,7 @@ a {
     text-decoration: underline !important;
 }
 .contenedor {
+    max-width: 120rem;
     width: 90%;
     margin: 0 auto;
 }
@@ -344,7 +345,7 @@ h2 {
 
 .header {
     background-image: url(/public/Mask-group-2.png);
-    height: 70rem;
+    height: 58rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -362,7 +363,7 @@ h2 {
         justify-content: space-between;
         align-items: center;
         padding: 3rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .navegacion {
         display: flex;
